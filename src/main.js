@@ -1,17 +1,12 @@
-let button = document.getElementById("themeBtn");
+// ==============================
+// MOBILE MENU
+// ==============================
 
-button.addEventListener("click", function () {
+let menuBtn = document.getElementById("menuBtn");
+let mobileMenu = document.getElementById("mobileMenu");
 
-    document.body.classList.toggle("light-theme");
+menuBtn.addEventListener("click", function () {
 
-    if (document.body.classList.contains("light-theme")) {
-
-        button.innerHTML = '<i class="fa-solid fa-moon"></i>';
-
-    } else {
-
-        button.innerHTML = '<i class="fa-solid fa-sun"></i>';
-
-    }
+    mobileMenu.classList.toggle("hidden");
 
 });
